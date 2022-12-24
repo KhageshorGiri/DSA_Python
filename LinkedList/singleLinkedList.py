@@ -58,7 +58,7 @@ class SingleLinkedList:
             self.last = newNode
         else:
             temp = self.first
-            for i in range(1, position-1):
+            for i in range(1, position):
                 temp = temp.getNext()
             newNode.setNext(temp.getNext())
             temp.setNext(newNode)
@@ -95,7 +95,7 @@ class SingleLinkedList:
             print("Void Deletion.\nLinked List is Empty.")
             return
         else:
-            for i in range(1, position-1):
+            for i in range(1, position):
                 temp = temp.getNext()
             hold = temp.getNext()
             temp.setNext(hold.getNext())
@@ -128,9 +128,9 @@ if __name__ == "__main__":
     singleLinkedList = SingleLinkedList()
     
     # inserting at the beginning
-    singleLinkedList.insertAtBeginning(3)
-    singleLinkedList.insertAtBeginning(2)
-    singleLinkedList.insertAtBeginning(1)
+    # singleLinkedList.insertAtBeginning(3)
+    # singleLinkedList.insertAtBeginning(2)
+    # singleLinkedList.insertAtBeginning(1)
 
     # inserting at the beginning
     # singleLinkedList.insertAtEnd(3)

@@ -63,7 +63,7 @@ class CircularLinkedList:
             self.last.setNext(newNode)
         else:
             temp = self.first
-            for i in range(1, position-1):
+            for i in range(1, position):
                 temp = temp.getNext()
             newNode.setNext(temp.getNext())
             temp.setNext(newNode)
@@ -106,7 +106,7 @@ class CircularLinkedList:
             self.last = None
         else:
             temp = self.first
-            for i in range(1, position-1):
+            for i in range(1, position):
                 temp = temp.getNext()
             hold = temp.getNext()
             temp.setNext(hold.getNext())
