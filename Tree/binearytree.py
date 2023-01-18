@@ -5,6 +5,7 @@
 # 3. Travese the tree
 # 4. Delete a node form the tree.
 
+# creat a Node for binary tree
 class Node:
     def __init__(self):
         pass
